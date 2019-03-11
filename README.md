@@ -1,7 +1,9 @@
 # liquidfish Developer Test
 
 ## SETUP
-Fork this repo to your personal github account and then email us that github link so we can review. 
+1. Clone this repo to your machine.  
+2. Create a new repository on your GitHub account and push the cloned project to your new repo. **Do not fork this project.**
+3. Once completed with the assessment, please email us a link to your git repo.  
 
 ## GOAL
 Working from a provided design, create a one page Laravel web project containing a responsive contact form that stores the submitted input to a database and emails that input to an email address.  
