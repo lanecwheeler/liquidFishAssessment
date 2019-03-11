@@ -1,4 +1,4 @@
-# liquidfish Developer Test
+# liquidfish Full Stack Developer Test
 
 ## SETUP
 1. Clone this repo to your machine.  
