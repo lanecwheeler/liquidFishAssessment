@@ -12,6 +12,7 @@
 4. Store that submission into a database that you will create via Laravel migrations (we will run these to get your database set up on our end)  
 5. Email the form to the user. 
 6. Upon success, show the designed success message.  
+
 *Bonus Points: Add any UX “flare" or animations that you think would be beneficial. ;)*  
 
 *Please provide database migrations to create the database and any environment variables we will need to run your application.*    
