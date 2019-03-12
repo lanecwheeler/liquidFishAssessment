@@ -10,12 +10,12 @@ Working from a provided design, create a one page Laravel web project containing
 Please provide database migrations to create the database and any environment variables.   
 We will provide the SMTP credentials. 
 
-## Timeline
+## TIMELINE
 You will have 4 hours to complete the assessment. To begin:  
 1. Clone the repo to your account
 2. Push a "Starting" commit as soon as you start the assessment.
 3. Push a "4 Hour" commit at the 4 hour mark.
-4. If you are not finished at the 4 hour mark but would like to, please do so!  
+4. If you are not finished at the 4 hour mark but would like to do so, please do so!  
 
 ## REQUIREMENTS
 Form submission and success/error messages should be handled using AJAX.   
