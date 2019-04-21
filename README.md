@@ -40,3 +40,14 @@ mail-icon.svg - The mail svg icon that is shown in the success screen
 
 ## Here goes nothing...
 Changing the readme so I can have the right commit message
+
+## There went everything...
+Changing the readme again so I can commit this at the 4 hour mark
+
+### TODO:
+1. Success message on happy submission :)
+2. Error fields on sad submissions :(
+3. A knock your socks off svg animation
+4. General css flair (love me some good hovers and such)
+
+Looking back, I wish I had started with Laravel's Vue bootstrapper, it just totally slipped my mind! 
