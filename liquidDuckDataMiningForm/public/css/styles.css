@@ -134,7 +134,6 @@ textarea {
 
 input:focus ~ .floating-label,
 input:not(:focus):valid ~ .floating-label,
-input[type='email']:not(input[value='']) ~ .floating-label,
 textarea:focus ~ .floating-label,
 textarea:not(:focus):valid ~ .floating-label,
 div.hasError .floating-label {
