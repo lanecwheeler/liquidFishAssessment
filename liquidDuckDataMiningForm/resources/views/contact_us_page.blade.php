@@ -27,30 +27,30 @@
                 <div class="container-1">
                     <div class="input-container">
                         <input type="text" class="@error('name') is-invalid @enderror" name='name' required>
-                        <span class="floating-label">name</span>
+                        <span id="namelabel" class="floating-label">name</span>
                     </div>
                     <div class="input-container">
                         <input type="text" class="@error('email') is-invalid @enderror" name='email' required>
-                        <span class="floating-label">email</span>
+                        <span id="emaillabel" class="floating-label">email</span>
                     </div>
                     <div class="input-container">
                         <input type="text" class="@error('company') is-invalid @enderror" name='company' required>
-                        <span class="floating-label">company</span>
+                        <span id="companylabel" class="floating-label">company</span>
                     </div>
                     <div class="input-container">
                         <input type="text" class="@error('phone') is-invalid @enderror" name='phone' required>
-                        <span class="floating-label">company</span>
+                        <span id="phonelabel" class="floating-label">phone number</span>
                     </div>
                     
                 </div>
                 <div class="container-2">
                     <div class="input-container">
                         <input type="text" class="@error('subject') is-invalid @enderror" name='subject' required>
-                        <span class="floating-label">subject</span>
+                        <span id="subjectlabel" class="floating-label">subject</span>
                     </div>
                     <div class="input-container">
                         <textarea rows="5" class="@error('message') is-invalid @enderror" name='message' required></textarea>
-                        <span class="floating-label">message</span>
+                        <span id="messagelabel" class="floating-label">message</span>
                     </div>
                 </div>
                 <div class="container-3">

@@ -2,6 +2,7 @@ $(function(){
 
     let $form = $('form')
     $('#contact').on('submit', function(e){
+        $('input textarea').addClass('validated')
 
         e.preventDefault()
 
@@ -9,8 +10,18 @@ $(function(){
             url: $form.attr('action'),
             method: 'post',
             data: $form.serialize(),
-            success: function(data){alert(data)},
-            fail: function(response){alert(response)}
+            complete: function(data){
+                console.log(data)
+                if(data.status === 200){
+                    //show success
+                } else {
+                    let errors = data.responseJSON.errors
+                    console.log(errors)
+                    for(x in errors){
+                        $('#'+x+'label').addClass('haserror').closest('div').addClass('haserror')
+                    }
+                }
+            }
         })
     })
 })

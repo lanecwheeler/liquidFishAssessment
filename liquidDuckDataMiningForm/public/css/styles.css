@@ -32,6 +32,22 @@ input {
     box-sizing: border-box;
 }
 
+div.haserror{
+    border-bottom: 1px solid red;
+    color: red;
+}
+
+input.validated:invalid ~ span::after, textarea.validated:invalid ~ span::after, div.haserror > span::after{
+    content: '!';
+    color: red;
+    font-style: italic;
+    font-weight: 700;
+}
+
+div.haserror > input, div.haserror > textarea{
+    color: red;
+}
+
 input:not(#submit){
     width: 100%;
 }
@@ -131,6 +147,7 @@ textarea:not(:focus):valid ~ .floating-label {
     transition: 0.2s ease all;
     color: #00000050;
     font-size: 1rem;
+    z-index: 1010;
 }
 
 .input-container {
