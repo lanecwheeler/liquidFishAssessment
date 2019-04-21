@@ -135,4 +135,5 @@ textarea:not(:focus):valid ~ .floating-label {
 
 .input-container {
     position: relative;
+    display: grid;
 }
