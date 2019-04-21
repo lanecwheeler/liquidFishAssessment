@@ -1,8 +1,8 @@
 $(function(){
-    alert('loaded')
+
     let $form = $('form')
     $('#contact').on('submit', function(e){
-        alert('OOF')
+
         e.preventDefault()
 
         $.ajax({

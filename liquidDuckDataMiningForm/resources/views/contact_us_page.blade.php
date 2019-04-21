@@ -32,10 +32,10 @@
                 </div>
                 <div class="container-2">
                     <input type="text" placeholder="subject" class="@error('subject') is-invalid @enderror" name='subject' required>
-                    <textarea placeholder="message" class="@error('message') is-invalid @enderror" name='message' required></textarea>
+                    <textarea rows="5" placeholder="message" class="@error('message') is-invalid @enderror" name='message' required></textarea>
                 </div>
                 <div class="container-3">
-                    <input type="submit">
+                    <input type="submit" value="Send">
                 </div>
             </form>
         </div>

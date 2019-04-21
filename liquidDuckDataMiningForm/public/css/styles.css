@@ -8,8 +8,10 @@ body {
     align-content: center;
     justify-content: center;
     height: 100vh;
-    width: 50%;
+    /* width: 50%; */
     margin:auto;
+    grid-template-columns: 1fr;
+    padding: 0px 10%;
 }
 
 section {
@@ -18,19 +20,77 @@ section {
 
 form {
     width: 100%;
+    box-shadow: 0 0 10px 0.1px #00000069;
+    background: #fff;
+}
+
+input {
+    height: 3rem;
+    padding: 5px 10px;
+    font-size: 105%;
+    border: 1px solid #00000025;
+}
+
+textarea {
+    padding: 5px 10px;
+    border: 1px solid #00000025;
+    resize: none;
+    font-size: 105%;
 }
 
 .container-1 {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     background: #fff;
+}
+
+@media (min-width: 600px) {
+    .container-1 {
+        grid-template-columns: auto auto;
+    }
 }
 
 .container-2 {
     display: grid;
+    position: relative;
+}
+
+.container-2::before{
+    content: '⋮';
+    font-size: 150%;
+    position: absolute;
+    right: 10px;
+    top: 1rem;
+    color: #00000050;
+}
+
+.container-3 {
+    text-align: right;
+}
+
+.container-3 input {
+    color: white;
+    text-transform: uppercase;
+    background: #D62139;
+    border: none;
+    padding: 0 30px;
+    text-align: right;
+}
+
+@media (max-width: 600px) {
+    .container-3 input {
+        text-align: center;
+        width: 100%;
+    }
 }
 
 #intro {
     text-align: center;
-    font-size: 3em;
+    font-size: 1.5em;
+}
+
+@media (min-width: 600px) {
+    #intro {
+        font-size: 3rem;
+    }
 }
