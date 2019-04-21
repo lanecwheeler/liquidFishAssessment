@@ -13,7 +13,6 @@ $(function(){
                 complete: function(data){
                     console.log(data)
                     if(data.status === 200){
-                        $('form input:not(input[type="submit"]), form textarea').val('')
                         $('.thankyou').addClass('shown')
                     } else {
                         let errors = data.responseJSON.errors

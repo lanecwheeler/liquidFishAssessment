@@ -180,6 +180,7 @@ div.hasError .floating-label {
 }
 
 .thankyou h3 {
+    margin-top: 0.25rem;
     color: #ffffff50;
 }
 
@@ -193,3 +194,15 @@ div.hasError .floating-label {
     padding: 1rem;
     clip-path: circle();
 }
+
+svg {
+    animation: fly 2s linear infinite;
+}
+
+@keyframes fly {
+    0% { top: 0; left: -2em;}
+    25% { top: -1em; left: 0em; transform: rotate(-5deg) scale(1.1);}
+    50% { top: 0; left: 2em;}
+    75% { top: 1em; left: 0em; transform: rotate(10deg) scale(0.9);}
+    100% { top: 0; left: -2em;}
+  }
