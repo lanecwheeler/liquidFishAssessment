@@ -5,7 +5,7 @@ $(function(){
         $('form input, form textarea').addClass('validated')
         e.preventDefault()
         if($('form')[0].checkValidity()){
-            alert('YOU GOOD')
+            $('form').blur()
             $.ajax({
                 url: $form.attr('action'),
                 method: 'post',
@@ -13,7 +13,8 @@ $(function(){
                 complete: function(data){
                     console.log(data)
                     if(data.status === 200){
-                        //show success
+                        $('form input:not(input[type="submit"]), form textarea').val('')
+                        $('.thankyou').addClass('shown')
                     } else {
                         let errors = data.responseJSON.errors
                         console.log(errors)

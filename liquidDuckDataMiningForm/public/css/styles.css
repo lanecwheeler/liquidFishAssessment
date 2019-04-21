@@ -18,6 +18,10 @@ section {
     width: 100%;
 }
 
+section .form-wrapper {
+    position: relative;
+}
+
 form {
     width: 100%;
     box-shadow: 0 0 10px 0.1px #00000069;
@@ -154,4 +158,38 @@ div.hasError .floating-label {
 .input-container {
     position: relative;
     display: grid;
+}
+
+.thankyou {
+    display: grid;
+    background: green;
+    color: white;
+    position: absolute;
+    height: 100%;
+    top: 0; right: 0px; bottom: 0; left: 0;
+    opacity: 0;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    transition: 0.2s ease all;
+    z-index: -1;
+}
+
+.thankyou h1 {
+    margin-bottom: 0;
+}
+
+.thankyou h3 {
+    color: #ffffff50;
+}
+
+.thankyou.shown{
+    opacity: 1;
+    z-index: 1020;
+}
+
+#svg{
+    background: white;
+    padding: 1rem;
+    clip-path: circle();
 }
