@@ -13,7 +13,7 @@
             <h1 id="intro">
                 How can we help you?
             </h1>
-            <form id="contact" method='post' action="{{ route('contactus.store') }}">
+            <form id="contact" method='post' action="{{ route('contactus.store') }}" novalidate>
                 {{ csrf_field() }}
                 @if ($errors->any())
                     <div class="alert alert-danger">
@@ -30,7 +30,7 @@
                         <span id="namelabel" class="floating-label">name</span>
                     </div>
                     <div class="input-container">
-                        <input type="text" class="@error('email') is-invalid @enderror" name='email' required>
+                        <input type="email" class="@error('email') is-invalid @enderror" name='email' required>
                         <span id="emaillabel" class="floating-label">email</span>
                     </div>
                     <div class="input-container">
