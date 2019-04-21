@@ -1,0 +1,36 @@
+*, *::placeholder {
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background: linear-gradient(to top, #223038, #223038);
+    color: #fff;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+    width: 50%;
+    margin:auto;
+}
+
+section {
+    width: 100%;
+}
+
+form {
+    width: 100%;
+}
+
+.container-1 {
+    display: grid;
+    grid-template-columns: auto auto;
+    background: #fff;
+}
+
+.container-2 {
+    display: grid;
+}
+
+#intro {
+    text-align: center;
+    font-size: 3em;
+}
