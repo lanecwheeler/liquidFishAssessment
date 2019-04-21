@@ -51,3 +51,6 @@ Changing the readme again so I can commit this at the 4 hour mark
 4. General css flair (love me some good hovers and such)
 
 Looking back, I wish I had started with Laravel's Vue bootstrapper, it just totally slipped my mind! 
+
+## Here goes nothing pt. 2: The Reckoning...
+Starting back up this Sunday so I can finish the front end. Also, Happy Easter! 🐰🐥🥚
