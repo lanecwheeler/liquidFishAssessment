@@ -25,17 +25,36 @@
                     </div>
                 @endif
                 <div class="container-1">
-                    <input type="text" placeholder="name" class="@error('name') is-invalid @enderror" name='name' required>
-                    <input type="text" placeholder="email" class="@error('email') is-invalid @enderror" name='email' required>
-                    <input type="text" placeholder="company" class="@error('company') is-invalid @enderror" name='company' required>
-                    <input type="text" placeholder="phone number" class="@error('phone') is-invalid @enderror" name='phone' required>
+                    <div class="input-container">
+                        <input type="text" class="@error('name') is-invalid @enderror" name='name' required>
+                        <span class="floating-label">name</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" class="@error('email') is-invalid @enderror" name='email' required>
+                        <span class="floating-label">email</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" class="@error('company') is-invalid @enderror" name='company' required>
+                        <span class="floating-label">company</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" class="@error('phone') is-invalid @enderror" name='phone' required>
+                        <span class="floating-label">company</span>
+                    </div>
+                    
                 </div>
                 <div class="container-2">
-                    <input type="text" placeholder="subject" class="@error('subject') is-invalid @enderror" name='subject' required>
-                    <textarea rows="5" placeholder="message" class="@error('message') is-invalid @enderror" name='message' required></textarea>
+                    <div class="input-container">
+                        <input type="text" class="@error('subject') is-invalid @enderror" name='subject' required>
+                        <span class="floating-label">subject</span>
+                    </div>
+                    <div class="input-container">
+                        <textarea rows="5" class="@error('message') is-invalid @enderror" name='message' required></textarea>
+                        <span class="floating-label">message</span>
+                    </div>
                 </div>
                 <div class="container-3">
-                    <input type="submit" value="Send">
+                    <input id="submit" type="submit" value="Send">
                 </div>
             </form>
         </div>

@@ -25,17 +25,25 @@ form {
 }
 
 input {
-    height: 3rem;
-    padding: 5px 10px;
+    height: 4rem;
+    padding: 10px 10px 0 10px;
     font-size: 105%;
     border: 1px solid #00000025;
+    box-sizing: border-box;
+}
+
+input:not(#submit){
+    width: 100%;
 }
 
 textarea {
-    padding: 5px 10px;
+    padding: 25px 10px 0 10px;
     border: 1px solid #00000025;
     resize: none;
     font-size: 105%;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .container-1 {
@@ -62,23 +70,31 @@ textarea {
     right: 10px;
     top: 1rem;
     color: #00000050;
+    z-index: 1010;
 }
 
 .container-3 {
     text-align: right;
 }
 
-.container-3 input {
+#submit {
     color: white;
     text-transform: uppercase;
     background: #D62139;
     border: none;
-    padding: 0 30px;
+    padding: 0 50px;
     text-align: right;
+    box-shadow: inset 0px 0px 5px 0px #00000050;
+    cursor: pointer;
+    transition: 0.2s ease all;
+}
+
+#submit:hover {
+    background: #a4192b;
 }
 
 @media (max-width: 600px) {
-    .container-3 input {
+    #submit {
         text-align: center;
         width: 100%;
     }
@@ -93,4 +109,30 @@ textarea {
     #intro {
         font-size: 3rem;
     }
+}
+
+
+input:focus ~ .floating-label,
+input:not(:focus):valid ~ .floating-label,
+textarea:focus ~ .floating-label,
+textarea:not(:focus):valid ~ .floating-label {
+    top: 8px;
+    bottom: 10px;
+    left: 10px;
+    font-size: 0.75rem;
+    opacity: 1;
+}
+
+.floating-label {
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    top: 20px;
+    transition: 0.2s ease all;
+    color: #00000050;
+    font-size: 1rem;
+}
+
+.input-container {
+    position: relative;
 }
