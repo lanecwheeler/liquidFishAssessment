@@ -54,3 +54,6 @@ Looking back, I wish I had started with Laravel's Vue bootstrapper, it just tota
 
 ## Here goes nothing pt. 2: The Reckoning...
 Starting back up this Sunday so I can finish the front end. Also, Happy Easter! 🐰🐥🥚
+
+## Pt 2: The Reckoning - Running Time: 03:24
+I worked for another couple of hours this afternoon just trying to clean up some of the styling. It was a fun project, a cool introduction to Laravel, and good practice overall. I'm excited to hear back on what you guys think, if you have any tips or suggesstions, let me know!

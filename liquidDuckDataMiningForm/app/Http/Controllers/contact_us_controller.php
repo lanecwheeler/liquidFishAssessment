@@ -18,17 +18,17 @@ class contact_us_controller extends Controller
         
     	contact_us_model::create($request -> all());	
 
-        // Mail::send('contact_response_page', array(
-        //     'name' => $request->get('name'),
-        //     'email' => $request->get('email'),
-        //     'company' => $request->get('company'),
-        //     'phone' => $request->get('phone'),
-        //     'subject' => $request->get('subject'),
-        //     'user_message' => $request->get('message')
-        // ), function($message) use ($request) {
-        //      $message->from('developer-test@liquidfish.com');
-        //      $message->to($request->get('email'), $request->get('name'))->subject($request->get('subject'));
-        // });
+        Mail::send('contact_response_page', array(
+            'name' => $request->get('name'),
+            'email' => $request->get('email'),
+            'company' => $request->get('company'),
+            'phone' => $request->get('phone'),
+            'subject' => $request->get('subject'),
+            'user_message' => $request->get('message')
+        ), function($message) use ($request) {
+             $message->from('developer-test@liquidfish.com');
+             $message->to($request->get('email'), $request->get('name'))->subject($request->get('subject'));
+        });
 
 	    return back()->with('success', 'Thanks for the message!');
     }
