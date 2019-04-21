@@ -13,3 +13,4 @@
 
 Route::get('/', 'contact_us_controller@show');
 
+Route::post('/', ['as' => 'contactus.store','uses' => 'contact_us_controller@save_contact_info']);

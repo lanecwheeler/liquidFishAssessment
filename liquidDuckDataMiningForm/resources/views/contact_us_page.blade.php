@@ -13,7 +13,8 @@
             <h1 id="intro">
                 How can we help you?
             </h1>
-            <form>
+            <form method='post' action="{{ route('contactus.store') }}">
+                {{ csrf_field() }}
                 <div class="container-1">
                     <input type="text" placeholder="name" name='name'>
                     <input type="text" placeholder="email" name='email'>
